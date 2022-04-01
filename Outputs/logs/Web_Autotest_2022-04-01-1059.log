@@ -1,0 +1,9 @@
+ Fri, 01 Apr 2022 10:59:06  ERROR basepage.py wait_eleVisible [ line:41 ] 等待元素 ('id', 'account') 可见失败！！！
+Traceback (most recent call last):
+  File "D:\workbench\learnGit\Common\basepage.py", line 38, in wait_eleVisible
+    WebDriverWait(self.driver,timeout,frequency).until(EC.visibility_of_element_located(locator))
+  File "D:\work\Python38\lib\site-packages\selenium\webdriver\support\wait.py", line 78, in until
+    value = method(self._driver)
+  File "D:\work\Python38\lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 125, in _predicate
+    return _element_if_visible(driver.find_element(*locator))
+AttributeError: 'function' object has no attribute 'find_element'

@@ -1,0 +1,27 @@
+ Fri, 16 Apr 2021 09:48:28  INFO basepage.py wait_eleVisible [ line:48 ] 等待元素 ('id', 'account') 可见成功，等待时间 0:00:00.024304
+ Fri, 16 Apr 2021 09:48:28  INFO basepage.py get_element [ line:115 ] 查找 输入用户名 元素 ('id', 'account') 成功！！！
+ Fri, 16 Apr 2021 09:48:28  INFO basepage.py input_text [ line:157 ] 输入用户名 元素 ('id', 'account') 输入文本003398 成功
+ Fri, 16 Apr 2021 09:48:28  INFO basepage.py wait_eleVisible [ line:48 ] 等待元素 ('id', 'password') 可见成功，等待时间 0:00:00.019839
+ Fri, 16 Apr 2021 09:48:28  INFO basepage.py get_element [ line:115 ] 查找 输入密码 元素 ('id', 'password') 成功！！！
+ Fri, 16 Apr 2021 09:48:28  INFO basepage.py input_text [ line:157 ] 输入密码 元素 ('id', 'password') 输入文本!@#ASDttt 成功
+ Fri, 16 Apr 2021 09:48:28  INFO basepage.py wait_eleVisible [ line:48 ] 等待元素 ('id', 'verifyCode') 可见成功，等待时间 0:00:00.013392
+ Fri, 16 Apr 2021 09:48:29  INFO basepage.py get_element [ line:115 ] 查找 输入验证码 元素 ('id', 'verifyCode') 成功！！！
+ Fri, 16 Apr 2021 09:48:29  INFO basepage.py input_text [ line:157 ] 输入验证码 元素 ('id', 'verifyCode') 输入文本003398 成功
+ Fri, 16 Apr 2021 09:48:29  INFO basepage.py wait_eleVisible [ line:48 ] 等待元素 ('id', 'login') 可见成功，等待时间 0:00:00.014880
+ Fri, 16 Apr 2021 09:48:29  INFO basepage.py get_element [ line:115 ] 查找 点击登录按钮 元素 ('id', 'login') 成功！！！
+ Fri, 16 Apr 2021 09:48:29  INFO basepage.py click_element [ line:140 ] 点击  点击登录按钮 元素 ('id', 'login') 成功！
+ Fri, 16 Apr 2021 09:48:34  INFO basepage.py wait_eleVisible [ line:48 ] 等待元素 ('xpath', '//span[text()="选址管理"]') 可见成功，等待时间 0:00:00.014879
+ Fri, 16 Apr 2021 09:48:34  INFO basepage.py get_element [ line:115 ] 查找 点击选址管理按钮 元素 ('xpath', '//span[text()="选址管理"]') 成功！！！
+ Fri, 16 Apr 2021 09:48:34  INFO basepage.py click_element [ line:140 ] 点击  点击选址管理按钮 元素 ('xpath', '//span[text()="选址管理"]') 成功！
+ Fri, 16 Apr 2021 09:48:34  INFO basepage.py wait_eleVisible [ line:48 ] 等待元素 ('xpath', '//div/img[@class="actionIcon___1NtR0 icon___3R3tu floatRight___3sicx"]') 可见成功，等待时间 0:00:00.691425
+ Fri, 16 Apr 2021 09:48:34  INFO basepage.py get_element [ line:115 ] 查找 点击选址申请按钮 元素 ('xpath', '//div/img[@class="actionIcon___1NtR0 icon___3R3tu floatRight___3sicx"]') 成功！！！
+ Fri, 16 Apr 2021 09:48:35  INFO basepage.py click_element [ line:140 ] 点击  点击选址申请按钮 元素 ('xpath', '//div/img[@class="actionIcon___1NtR0 icon___3R3tu floatRight___3sicx"]') 成功！
+ Fri, 16 Apr 2021 09:48:36  INFO basepage.py wait_eleVisible [ line:48 ] 等待元素 ('xpath', '//label[contains(text(),"流程归属")]/parent::div/following-sibling::div') 可见成功，等待时间 0:00:00.880895
+ Fri, 16 Apr 2021 09:48:36  INFO basepage.py get_element [ line:115 ] 查找 点击流程归属下拉框 元素 ('xpath', '//label[contains(text(),"流程归属")]/parent::div/following-sibling::div') 成功！！！
+ Fri, 16 Apr 2021 09:48:36  INFO basepage.py click_element [ line:140 ] 点击  点击流程归属下拉框 元素 ('xpath', '//label[contains(text(),"流程归属")]/parent::div/following-sibling::div') 成功！
+ Fri, 16 Apr 2021 09:48:36  INFO basepage.py wait_eleVisible [ line:48 ] 等待元素 ('xpath', '//*[contains(text(), "地区开发人员-广深")]') 可见成功，等待时间 0:00:00.526256
+ Fri, 16 Apr 2021 09:48:36  INFO basepage.py get_element [ line:115 ] 查找 选择流程 元素 ('xpath', '//*[contains(text(), "地区开发人员-广深")]') 成功！！！
+ Fri, 16 Apr 2021 09:48:37  INFO basepage.py click_element [ line:140 ] 点击  选择流程 元素 ('xpath', '//*[contains(text(), "地区开发人员-广深")]') 成功！
+ Fri, 16 Apr 2021 09:48:37  INFO basepage.py wait_eleVisible [ line:48 ] 等待元素 ('xpath', '//a[text()="打开高德地图"]') 可见成功，等待时间 0:00:00.016863
+ Fri, 16 Apr 2021 09:48:37  INFO basepage.py get_element [ line:115 ] 查找 点击打开高德地图 元素 ('xpath', '//a[text()="打开高德地图"]') 成功！！！
+ Fri, 16 Apr 2021 09:48:37  INFO basepage.py click_element [ line:140 ] 点击  点击打开高德地图 元素 ('xpath', '//a[text()="打开高德地图"]') 成功！
