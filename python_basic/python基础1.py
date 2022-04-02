@@ -254,8 +254,26 @@ strip    去除字符串两边的空格（或指定字符串）
 swapcase()
 字符串大小写转换，大写表小写，小写变大写
 '''
-v1 = "abcDEF"
-print(v1.swapcase())
+# v1 = "abcDEF"
+# print(v1.swapcase())
+
+'''
+字符串的切片操作
+str1[start:end:step]
+
+'''
+
+str1 = ["zhang",1,3,54,34,23,1,2,3,4,5,6,7,8]
+
+print(str1[2])
+print(str1[-4])
+print(str1[1:4])
+print(str1[-4:-1])
+
+print(str1[1:10:2])
+
+
+
 
 '''
 translate
