@@ -105,3 +105,6 @@ print(li[:1])
 print(li[1:3])
 print(li[-2])
 print(li[-3:-1])
+
+del li[0] #删除列表的某个元素
+print(li)

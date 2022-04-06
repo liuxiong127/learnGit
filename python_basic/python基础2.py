@@ -5,10 +5,23 @@
 @File:  python基础2.py
 @Email：  liuxiong@fcbox.com
 '''
-
+'''
+python的输入输出
+'''
 # a = input("请输入>>>>>:")
-#
 # print(a)
+
+
+'''
+python的条件及循环语句
+
+if……else
+for循环
+while循环
+'''
+
+
+
 
 '''
 for循环
@@ -32,6 +45,10 @@ else:
     print("九九乘法表打印完成")
 
 
+'''
+while循环
+'''
+
 i = 100
 count = 0
 while i>0:
@@ -52,6 +69,9 @@ if...else条件语句
 
 '''
 
+'''
+while和if……else条件结合使用
+'''
 
 user = "admin"
 password = "123456"

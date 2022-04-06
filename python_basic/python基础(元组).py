@@ -29,6 +29,7 @@ str1 = "abcdef"
 num1 = 45
 t2 = tuple(li)
 t3 = tuple(str1)
-t4 = tuple(num1)
+# t4 = tuple(num1)
 print(t2)
-print(t3)
+# print(t3)
+
