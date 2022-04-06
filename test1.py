@@ -7,14 +7,20 @@
 '''
 
 from selenium import webdriver
+from selenium.webdriver.support.wait import WebDriverWait
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support import expected_conditions as EC
 import time
 
 driver = webdriver.Chrome()
-driver.get("http://www.baidu.com")
-time.sleep(5)
+driver.get("http://cns-sit5.fcbox.com")
+
+locator = (By.ID, 'userValidateTitle')
+WebDriverWait(10, 0.1, driver).until(EC.visibility_of_element_located(locator))
 driver.maximize_window()
-time.sleep(2)
-driver.close()
+time.sleep(5)
+
+driver.find_element(By.ID, 'account').send_keys("003398")
 
 
 
