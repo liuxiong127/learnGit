@@ -16,3 +16,4 @@ s1 = set("123")
 print(s1)
 print(s2, type(s2))
 
+set
