@@ -38,22 +38,33 @@
 '''
 
 # 报名python学生
-# pythons = {"mike","jack","egon","oldboy"}
-# # 报名Linux的学生
-# linuxs = {"tom", "jerry", "mike"}
-# # 同时报名python和Linux
-# print(pythons & linuxs)
-# # 报名学习的学生
-# print(pythons | linuxs)
-# # 只报了python,没有报linux学生
-# print(pythons-linuxs)
-# # 没用同时报这两门课学生的名字
-# print(pythons ^ linuxs)
-
+pythons = {"mike","jack","egon","oldboy"}
+# 报名Linux的学生
+linuxs = {"tom", "jerry", "mike"}
+# 同时报名python和Linux
+# 求交集
+print("-----求交集----")
+print(pythons & linuxs)
+print(pythons.intersection(linuxs))
+# 报名学习的学生
+# 求并集
+print("求并集".center(40, '-'))
+print(pythons | linuxs)
+print(pythons.union(linuxs))
+# 只报了python,没有报linux学生
+# 求差集
+print("----求差集----")
+print(pythons-linuxs)
+print(pythons.difference(linuxs))
+# 没用同时报这两门课学生的名字
+print("交叉补集".center(40,'-'))
+print(pythons ^ linuxs)
+print(pythons.symmetric_difference(linuxs))
 
 '''
 去重
 '''
+print("去重".center(40,'-'))
 
 l = [3,'a',1,2,3,4,5,'a']
 print(set(l))
