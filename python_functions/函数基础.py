@@ -165,4 +165,21 @@ foo1(*[1,2,3])
 print("---------kwargs----------")
 
 def foo2(x,y,**kwargs):
-    pass
+    print(1,2,kwargs)
+
+foo2(1,y=2,a=1,b='1',c=4)
+foo2(1,y=2,**{'a':1,'b':2,'c':3})
+
+
+#5、命名关键字参数：*后定义的参数，必须被传值（有默认值的除外），且必须按照关键字实参的形式传递
+# 可以保证，传入的参数中一定包含某些关键字
+print("多个混合参数赋值".center(40,'+'))
+def foo(x,y,*args,a=1,b,**kwargs):
+    print(x,y)
+    print(args)
+    print(a)
+    print(b)
+    print(kwargs)
+
+# foo(1,3,4,5,b=3,x1=1,y1=2,z1=3)
+foo(1,3,4,4,5,a=3,b=3,x1=1,y1=2,z1=3)
