@@ -42,9 +42,22 @@ def index():
 def goods():
     print("购物车满了")
 
+#
+# f1()
+# index()
+# goods()
+for a in range(1,7,2):
+    print(a)
 
-f1()
-index()
-goods()
+b = range(1,8,2)
+print(type(b),b[0])
+
+def ranges(start,end,step):
+    while start <end:
+        yield start
+        start+=step
+
+c = ranges(1,7,2)
+print(c.__next__())
 
 
