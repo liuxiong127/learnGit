@@ -28,15 +28,15 @@ python test.py
 
 '''
 
-max1=1
-def f1():
-    # max1=2
-    def f2():
-        # max1=3
-        print(max1)
-    f2()
-f1()
-print(max1)
+# max1=1
+# def f1():
+#     # max1=2
+#     def f2():
+#         # max1=3
+#         print(max1)
+#     f2()
+# f1()
+# print(max1)
 
 
 '''
@@ -61,14 +61,35 @@ builtins 内置模块的名字空间
 '''
 
 # x=1
-def f1():
-    def f2():
-        print(x)
-    return f2
-# x=100
-def f3(func):
-    x=2
-    func()
-x=10000
+# def f1():
+#     def f2():
+#         print(x)
+#     return f2
+# # x=100
+# def f3(func):
+#     x=2
+#     func()
+# x=10000
 
-f3(f1())
+# f3(f1())
+
+name = "shangsan"
+def change_name():
+    name = "chenpei"
+    print("change_name", name)
+
+
+def change_name1():
+    global name
+    name = "chenpei"
+    print("change_name", name)
+
+
+def changes():
+    test = "shanyizhonggong"
+    print(test)
+
+change_name()
+change_name1()
+print(name)
+

@@ -28,25 +28,96 @@
 用户输入sql--->sql解析--->执行功能
 '''
 
+import re
 def talk():
+    users = get_user()
+    print(users, type(users))
     while True:
         username = input("username-->>:").strip()
-        if username.isalpha():
-            break
+        if isNumLeters(username):
+            if username in users:
+                print("用户已存在！")
+            else:
+                break
         else:
-            print("用户密码只能为字母")
-
+            print("用户密码只能为字母数字下划线，且不能以数字开头")
 
     while True:
         passwd1 = input("输入密码-->:").strip()
-        passwd2 = input("确认密码-->:").strip()
-        if passwd1 == passwd2:
-            break
+        if len(passwd1)<8:
+            print("密码过短")
+
+        elif len(passwd1)>16:
+            print("密码过长")
         else:
-            print("两次输入的密码不一致！！")
-    return username,passwd1
+            passwd2 = input("确认密码-->:").strip()
+            if passwd1 == passwd2:
+                break
+            else:
+                print("两次输入的密码不一致！！")
 
 
-def register_interface(username,password):
-    format_str = "%s:%s"%(username, password)
+    role_dict = {
+        "1":"user",
+        '2':"admin"
+    }
+
+    while True:
+        for k in role_dict:
+            print(k,role_dict[k])
+        choice = input('请输入您的身份>>: ').strip()
+        if choice not in role_dict:
+            print('输入的身份不存在')
+            continue
+        else:
+
+            role1 = role_dict[choice]
+            break
+    return username,passwd1,role1
+
+
+
+def get_user():
+    with open('../datas/user.txt', encoding="utf-8") as f:
+        res = f.readlines()
+        user = []
+        for i in res:
+            user.append(i.split(":")[0])
+    return user
+
+
+
+def isNumLeters(s):
+    s = str(s)
+    if s == '':
+        return False
+    if len(s)<2:
+        if re.match('^[a-zA-Z_]+$',s[0]):
+            return True
+        else:
+            return False
+    else:
+       if re.match('^[a-zA-Z_]+$', s[0]) and re.match('^[0-9a-zA-Z_]+$',s[1:]):
+            return True
+       else:
+           return False
+
+
+
+
+def register_interface(username,password,role):
+    format_str = "%s:%s:%s\n"%(username, password, role)
     return format_str
+
+def handle_file(format_str,filepath):
+    with open(r'%s' %filepath,'at',encoding='utf-8') as f:
+        f.write(format_str)
+
+def register():
+    user,pwd,role=talk()
+    format_str=register_interface(user,pwd,role)
+    handle_file(format_str,'../datas/user.txt')
+
+
+register()
+# get_user()
